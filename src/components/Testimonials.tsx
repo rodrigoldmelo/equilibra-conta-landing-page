@@ -29,6 +29,10 @@ const Testimonials = () => {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Empresas que confiam na Equilibra Conta para sua gestão financeira
           </p>
+          <div className="mt-2 text-sm text-gray-400 italic">
+            Para alterar as fotos, nomes e textos dos depoimentos, clique sobre o conteúdo no editor da Lovable e substitua manualmente as informações. 
+            Caso a seção esteja travada, entre em contato com o suporte da plataforma.
+          </div>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

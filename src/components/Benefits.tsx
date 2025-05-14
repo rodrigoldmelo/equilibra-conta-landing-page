@@ -8,8 +8,8 @@ interface BenefitProps {
 }
 
 const BenefitCard = ({ icon, title, description }: BenefitProps) => (
-  <div className="bg-white rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-xl hover:scale-105">
-    <div className="inline-flex items-center justify-center p-3 bg-equilibra-green-light/10 rounded-full text-equilibra-green-dark mb-4">
+  <div className="flex flex-col items-center text-center">
+    <div className="w-24 h-24 flex items-center justify-center bg-equilibra-green-light/10 rounded-full text-equilibra-green-dark mb-6">
       {icon}
     </div>
     <h3 className="text-xl font-semibold text-equilibra-green-dark mb-3">{title}</h3>
@@ -20,29 +20,29 @@ const BenefitCard = ({ icon, title, description }: BenefitProps) => (
 const Benefits = () => {
   const benefits = [
     {
-      icon: <DollarSign size={28} />,
+      icon: <DollarSign size={40} />,
       title: "Redução de custos",
       description: "Economize em estrutura interna e folha de pagamento, pagando apenas pelo que realmente precisa."
     },
     {
-      icon: <Users size={28} />,
+      icon: <Users size={40} />,
       title: "Especialistas à disposição",
       description: "Conte com profissionais experientes focados em gerenciar suas finanças com excelência."
     },
     {
-      icon: <Clock size={28} />,
+      icon: <Clock size={40} />,
       title: "Otimização de tempo",
       description: "Libere sua equipe para focar nas atividades estratégicas do negócio, aumentando a produtividade."
     },
     {
-      icon: <TrendingUp size={28} />,
+      icon: <TrendingUp size={40} />,
       title: "Decisões estratégicas",
       description: "Acesse relatórios detalhados e atualizados para tomar decisões baseadas em dados confiáveis."
     }
   ];
 
   return (
-    <section id="beneficios" className="py-16 bg-white">
+    <section id="beneficios" className="py-16 bg-equilibra-green-dark/5">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-equilibra-green-dark mb-4">Benefícios do BPO Financeiro</h2>
@@ -51,7 +51,7 @@ const Benefits = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {benefits.map((benefit, index) => (
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${0.1 * (index + 1)}s` }}>
               <BenefitCard {...benefit} />

@@ -52,7 +52,7 @@ const Hero = () => {
               />
               <div className="absolute -bottom-4 -right-4 bg-equilibra-green-light rounded-lg p-4 shadow-lg z-20">
                 <p className="text-white font-semibold">
-                  ✓ Mais de 500 empresas atendidas
+                  Mais eficiência e controle financeiro para o seu negócio — sem complicação.
                 </p>
               </div>
             </div>

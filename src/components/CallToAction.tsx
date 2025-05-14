@@ -1,7 +1,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 
@@ -48,6 +48,29 @@ const CallToAction = () => {
           </div>
           
           <div className="bg-white rounded-lg shadow-xl p-6 md:p-8">
+            <div className="mb-8 bg-equilibra-green-light/10 rounded-lg p-6 border-l-4 border-equilibra-green-light">
+              <h3 className="text-equilibra-green-dark text-xl font-semibold mb-4">
+                Ao preencher o formulário, você garante:
+              </h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <Check className="mr-2 text-equilibra-green-light mt-1 flex-shrink-0" size={18} />
+                  <span>Um diagnóstico inicial da sua situação financeira</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="mr-2 text-equilibra-green-light mt-1 flex-shrink-0" size={18} />
+                  <span>Estratégia personalizada para melhorar seu controle financeiro</span>
+                </li>
+                <li className="flex items-start">
+                  <Check className="mr-2 text-equilibra-green-light mt-1 flex-shrink-0" size={18} />
+                  <span>Explicação prática do nosso método de BPO eficiente</span>
+                </li>
+              </ul>
+              <p className="mt-4 font-semibold text-equilibra-green-dark">
+                Preencha agora e agende seu bate-papo gratuito com um especialista!
+              </p>
+            </div>
+          
             <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <h3 className="text-equilibra-green-dark text-xl font-semibold">
