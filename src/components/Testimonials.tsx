@@ -2,9 +2,9 @@
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "A Equilibra Conta transformou nossa gestão financeira. Agora temos visibilidade clara dos números e conseguimos tomar decisões muito mais seguras.",
-      name: "Carlos Silva",
-      position: "CEO, Empresa de Tecnologia",
+      quote: "A Equilibra Conta facilitou minha vida. Hoje eu consigo focar em outras coisas.",
+      name: "Inglyd Reis",
+      position: "IR Consultoria",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=250&h=250"
     },
     {
