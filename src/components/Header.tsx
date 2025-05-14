@@ -21,8 +21,12 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="#" className="text-equilibra-green-dark font-bold text-2xl">
-              <span className="text-equilibra-green-light">Equilibra</span> Conta
+            <a href="#" className="flex items-center">
+              <img 
+                src="/lovable-uploads/b4225e19-163d-4d66-be22-8f90abe8db96.png" 
+                alt="Equilibra Conta Logo" 
+                className="h-10 md:h-12"
+              />
             </a>
           </div>
 
