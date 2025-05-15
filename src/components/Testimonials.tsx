@@ -9,19 +9,19 @@ const Testimonials = () => {
       quote: "A Equilibra Conta facilitou minha vida. Hoje eu consigo focar em outras coisas.",
       name: "Inglyd Reis",
       position: "IR Consultoria",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=250&h=250"
+      image: "https://share.icloud.com/photos/0edpREFvoGChh0SD00rA1CgWA"
     },
     {
       quote: "Reduzi meus custos com departamento financeiro em 40% e ainda ganhei mais qualidade nas informações. Foi a melhor decisão que tomei para a empresa.",
-      name: "Ana Ferreira",
-      position: "Diretora Comercial, Varejo",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=250&h=250"
+      name: "Rodrigo Lemos",
+      position: "Meu Analista de Mídias",
+      image: "https://share.icloud.com/photos/0ebvHt6FIY84Q_QaCJZA-vPeQ"
     },
     {
       quote: "O nível de profissionalização que conseguimos com o BPO da Equilibra Conta nos ajudou a escalar os negócios com muito mais segurança.",
-      name: "Marcelo Costa",
-      position: "Fundador, Startup",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=250&h=250"
+      name: "Bruno Vieira",
+      position: "Vieira&Cavalcanti Advogados",
+      image: "https://share.icloud.com/photos/0aar8Ne66hP-2SAnHKGxv2x4w"
     }
   ];
 
