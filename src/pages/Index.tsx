@@ -9,6 +9,7 @@ import PricingPlans from "@/components/PricingPlans";
 import Testimonials from "@/components/Testimonials";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
+import Advantages from "@/components/Advantages";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
       <Comparison />
       <Services />
       <HowItWorks />
+      <Advantages />
       <PricingPlans />
       <Testimonials />
       <CallToAction />

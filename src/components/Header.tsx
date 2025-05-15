@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -11,6 +12,14 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const scrollToContactForm = () => {
+    document.getElementById('cta-section')?.scrollIntoView({
+      behavior: 'smooth'
+    });
+    setIsMenuOpen(false);
+  };
+
   return <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
@@ -26,9 +35,7 @@ const Header = () => {
             <a href="#servicos" className="text-gray-700 hover:text-equilibra-green-dark transition-colors">Serviços</a>
             <a href="#como-funciona" className="text-gray-700 hover:text-equilibra-green-dark transition-colors">Como Funciona</a>
             <a href="#depoimentos" className="text-gray-700 hover:text-equilibra-green-dark transition-colors">Depoimentos</a>
-            <Button className="bg-equilibra-green-light hover:bg-equilibra-green-dark text-white" onClick={() => document.getElementById('cta-section')?.scrollIntoView({
-            behavior: 'smooth'
-          })}>
+            <Button className="bg-equilibra-green-light hover:bg-equilibra-green-dark text-white" onClick={scrollToContactForm}>
               Fale Conosco
             </Button>
           </nav>
@@ -55,12 +62,7 @@ const Header = () => {
             <a href="#depoimentos" className="text-gray-700 hover:text-equilibra-green-dark transition-colors p-2" onClick={() => setIsMenuOpen(false)}>
               Depoimentos
             </a>
-            <Button className="bg-equilibra-green-light hover:bg-equilibra-green-dark text-white w-full" onClick={() => {
-          document.getElementById('cta-section')?.scrollIntoView({
-            behavior: 'smooth'
-          });
-          setIsMenuOpen(false);
-        }}>
+            <Button className="bg-equilibra-green-light hover:bg-equilibra-green-dark text-white w-full" onClick={scrollToContactForm}>
               Fale Conosco
             </Button>
           </nav>}
