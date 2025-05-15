@@ -1,3 +1,4 @@
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -6,7 +7,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">
-              <span className="text-equilibra-green-light">Equilibra</span> Conta
+              <img 
+                src="/lovable-uploads/35f910ae-f02b-403c-a34c-1e8e7ba3476c.png" 
+                alt="Equilibra Conta Logo" 
+                className="h-12"
+              />
             </h3>
             <p className="text-gray-400">
               Serviços especializados em BPO Financeiro para empresas de pequeno e médio porte.
