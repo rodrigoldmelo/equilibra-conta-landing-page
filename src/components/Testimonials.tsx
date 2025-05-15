@@ -1,17 +1,21 @@
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 const Testimonials = () => {
+  // Testimonial data - Edit these values directly to update the testimonials
+  // You can replace the image URLs with your own uploaded images or use Unsplash links
   const testimonials = [
     {
       quote: "A Equilibra Conta facilitou minha vida. Hoje eu consigo focar em outras coisas.",
       name: "Inglyd Reis",
       position: "IR Consultoria",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=250&h=250"
+      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=250&h=250"
     },
     {
       quote: "Reduzi meus custos com departamento financeiro em 40% e ainda ganhei mais qualidade nas informações. Foi a melhor decisão que tomei para a empresa.",
       name: "Ana Ferreira",
       position: "Diretora Comercial, Varejo",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=250&h=250"
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=250&h=250"
     },
     {
       quote: "O nível de profissionalização que conseguimos com o BPO da Equilibra Conta nos ajudou a escalar os negócios com muito mais segurança.",
@@ -30,7 +34,13 @@ const Testimonials = () => {
             Empresas que confiam na Equilibra Conta para sua gestão financeira
           </p>
           <div className="mt-2 text-sm text-gray-400 italic">
-            Para alterar as fotos, nomes e textos dos depoimentos, clique diretamente no bloco correspondente no editor. Caso o conteúdo esteja bloqueado, entre em contato com o suporte da Lovable.
+            <p>Para alterar as fotos, nomes e textos dos depoimentos:</p>
+            <ol className="list-decimal list-inside mx-auto max-w-md text-left mt-2">
+              <li>Ative o Dev Mode no canto superior esquerdo</li>
+              <li>Encontre o arquivo src/components/Testimonials.tsx</li>
+              <li>Edite o array "testimonials" com seus novos dados</li>
+              <li>Salve as alterações</li>
+            </ol>
           </div>
         </div>
         
@@ -42,13 +52,10 @@ const Testimonials = () => {
               style={{ animationDelay: `${0.15 * (index + 1)}s` }}
             >
               <div className="flex items-center mb-4">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name} 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                <Avatar className="w-16 h-16 mr-4">
+                  <AvatarImage src={testimonial.image} alt={testimonial.name} />
+                  <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                </Avatar>
                 <div>
                   <h3 className="font-semibold text-lg text-equilibra-green-dark">{testimonial.name}</h3>
                   <p className="text-gray-500 text-sm">{testimonial.position}</p>
